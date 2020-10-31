@@ -1,3 +1,3 @@
-import {titlePageLoad} from './titlepageload.js';
+import {homePageLoad} from './homepageload.js';
 
-titlePageLoad();
+homePageLoad();

@@ -1,0 +1,23 @@
+#content {
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.nav-item {
+    font-family: 'Vampiro One', cursive;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Vampiro One', cursive;
+}

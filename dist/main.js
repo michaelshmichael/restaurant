@@ -10,6 +10,20 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/homepageload.js":
+/*!*****************************!*\
+  !*** ./src/homepageload.js ***!
+  \*****************************/
+/*! namespace exports */
+/*! export homePageLoad [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"homePageLoad\": () => /* binding */ homePageLoad\n/* harmony export */ });\nconst homePageLoad = () => {\r\n\r\nlet contentDiv = document.getElementById('content')\r\n\r\nlet header = document.createElement('h1');\r\nheader.textContent = 'Kakao Dak - Finest Korean Cuisine';\r\nheader.style = 'font-family: Vampiro One, cursive; font-size: 50px;'\r\n\r\nlet image = document.createElement('img');\r\nimage.setAttribute(\"src\", 'https://weproject.media/upload/medialibrary/cc9/cc9c84c0902181b01e39916304fcf3cb.jpeg');\r\n\r\nlet blurb = document.createElement('p');\r\nblurb.textContent = 'We put the Seoul into Nur-Seoul-Tan'\r\n\r\ncontentDiv.appendChild(header);\r\ncontentDiv.appendChild(image);\r\ncontentDiv.appendChild(blurb);\r\n\r\n}\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-1/./src/homepageload.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -19,21 +33,7 @@
 /*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageload_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageload.js */ \"./src/pageload.js\");\n\r\n\r\n(0,_pageload_js__WEBPACK_IMPORTED_MODULE_0__.pageLoad)();\n\n//# sourceURL=webpack://restaurant-1/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/pageload.js":
-/*!*************************!*\
-  !*** ./src/pageload.js ***!
-  \*************************/
-/*! namespace exports */
-/*! export pageLoad [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"pageLoad\": () => /* binding */ pageLoad\n/* harmony export */ });\nconst pageLoad = () => {\r\n\r\nlet contentDiv = document.getElementById('content')\r\nlet header = document.createElement('h1');\r\nheader.textContent = 'Kakao Dak - Finest Korean Cuisine'\r\ncontentDiv.appendChild(header)\r\n\r\n}\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-1/./src/pageload.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepageload_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepageload.js */ \"./src/homepageload.js\");\n\r\n\r\n(0,_homepageload_js__WEBPACK_IMPORTED_MODULE_0__.homePageLoad)();\n\n//# sourceURL=webpack://restaurant-1/./src/index.js?");
 
 /***/ })
 
