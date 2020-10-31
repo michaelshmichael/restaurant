@@ -33,7 +33,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepageload_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepageload.js */ \"./src/homepageload.js\");\n\r\n\r\n(0,_homepageload_js__WEBPACK_IMPORTED_MODULE_0__.homePageLoad)();\n\n//# sourceURL=webpack://restaurant-1/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepageload_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepageload.js */ \"./src/homepageload.js\");\n\r\n//import two other functions from two modules\r\n\r\nconst homeTab = document.getElementById('homeTab');\r\nconst menuTab = document.getElementById('menuTab');\r\nconst contactsTab = document.getElementById('contactsTab');\r\n(0,_homepageload_js__WEBPACK_IMPORTED_MODULE_0__.homePageLoad)();\r\n\r\n//when tab clicked, delete content from div\r\n//repopulate div with appropriate content\r\n\r\nhomeTab.addEventListener('click', function(){\r\n    alert('home')\r\n})\r\n\r\nmenuTab.addEventListener('click', function(){\r\n    alert('menu')\r\n})\r\n\r\ncontactsTab.addEventListener('click', function(){\r\n    alert('contacts')\r\n})\n\n//# sourceURL=webpack://restaurant-1/./src/index.js?");
 
 /***/ })
 
