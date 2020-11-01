@@ -9,6 +9,20 @@
     height: 200px;
 }
 
+#menuImage {
+    margin-top: 50px;
+    height: 500px;
+    width: 400px;
+}
+
+#expoContact {
+    margin-top: 70px;
+}
+
+.contactText {
+    font-size: 45px;
+}
+
 h1 {
     font-size: 60px;
 }
