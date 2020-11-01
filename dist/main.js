@@ -10,6 +10,20 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contactspageload.js":
+/*!*********************************!*\
+  !*** ./src/contactspageload.js ***!
+  \*********************************/
+/*! namespace exports */
+/*! export contactPageLoad [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contactPageLoad\": () => /* binding */ contactPageLoad\n/* harmony export */ });\nconst contactPageLoad = () => {\r\n    let contentDiv = document.getElementById('content');\r\n    let contactImage = document.createElement('img')\r\n    contactImage.setAttribute('src','https://www.ipcaweb.org/images/IPC_Contact_Us.jpg','id','contactImage');\r\n    //contactImage.setAttribute()\r\n    contentDiv.appendChild(contactImage)\r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant-1/./src/contactspageload.js?");
+
+/***/ }),
+
 /***/ "./src/homepageload.js":
 /*!*****************************!*\
   !*** ./src/homepageload.js ***!
@@ -33,7 +47,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepageload_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepageload.js */ \"./src/homepageload.js\");\n\r\n//import two other functions from two modules\r\n\r\nconst homeTab = document.getElementById('homeTab');\r\nconst menuTab = document.getElementById('menuTab');\r\nconst contactsTab = document.getElementById('contactsTab');\r\n(0,_homepageload_js__WEBPACK_IMPORTED_MODULE_0__.homePageLoad)();\r\n\r\n//when tab clicked, delete content from div\r\n//repopulate div with appropriate content\r\n\r\nhomeTab.addEventListener('click', function(){\r\n    alert('home')\r\n})\r\n\r\nmenuTab.addEventListener('click', function(){\r\n    alert('menu')\r\n})\r\n\r\ncontactsTab.addEventListener('click', function(){\r\n    alert('contacts')\r\n})\n\n//# sourceURL=webpack://restaurant-1/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepageload_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepageload.js */ \"./src/homepageload.js\");\n/* harmony import */ var _menupageload_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menupageload.js */ \"./src/menupageload.js\");\n/* harmony import */ var _contactspageload_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactspageload.js */ \"./src/contactspageload.js\");\n\r\n\r\n\r\n//import two other functions from two modules\r\n\r\nconst homeTab = document.getElementById('homeTab');\r\nconst menuTab = document.getElementById('menuTab');\r\nconst contactsTab = document.getElementById('contactsTab');\r\nlet contentDiv = document.getElementById('content')\r\n;(0,_homepageload_js__WEBPACK_IMPORTED_MODULE_0__.homePageLoad)();\r\n\r\nconst clearDiv = () => {\r\n    contentDiv.textContent = '';\r\n}\r\n\r\n//when tab clicked, delete content from div\r\n//repopulate div with appropriate content\r\n\r\nhomeTab.addEventListener('click', function(){\r\n    clearDiv();\r\n    (0,_homepageload_js__WEBPACK_IMPORTED_MODULE_0__.homePageLoad)();\r\n})\r\n\r\nmenuTab.addEventListener('click', function(){\r\n    clearDiv();\r\n    (0,_menupageload_js__WEBPACK_IMPORTED_MODULE_1__.menuPageLoad)();\r\n})\r\n\r\ncontactsTab.addEventListener('click', function(){\r\n    clearDiv();\r\n    (0,_contactspageload_js__WEBPACK_IMPORTED_MODULE_2__.contactPageLoad)();\r\n})\n\n//# sourceURL=webpack://restaurant-1/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menupageload.js":
+/*!*****************************!*\
+  !*** ./src/menupageload.js ***!
+  \*****************************/
+/*! namespace exports */
+/*! export menuPageLoad [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menuPageLoad\": () => /* binding */ menuPageLoad\n/* harmony export */ });\nconst menuPageLoad = () => {\r\n    let contentDiv = document.getElementById('content');\r\n    let menuImage = document.createElement('img')\r\n    menuImage.setAttribute('src','https://astana.restolife.kz/upload/information_system_26/5/4/0/group_5400/information_groups_property_12382.jpg') \r\n    contentDiv.appendChild(menuImage)\r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant-1/./src/menupageload.js?");
 
 /***/ })
 
